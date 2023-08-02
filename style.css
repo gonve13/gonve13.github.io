@@ -1,0 +1,44 @@
+button{
+    border: none;
+    color: black;
+    padding: 2px 32px 3px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;    
+    background-size:contain;
+    background-repeat: no-repeat;
+    transform: skew(-20deg);
+    opacity: 0.5;
+    margin:0 2px;
+    text-shadow: 0 0 5px white;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+.btn-txt{
+    transform: skew(20deg);
+}
+
+#btn-esp{
+    background-image: url(./img/esp.png);
+    background-position-x: right;
+}
+
+#btn-eng{
+    background-image: url(./img/eng.png);
+    background-position-x: left;
+}
+
+#lang-selector{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+    position: absolute;
+    top: 35%;
+    width: 99%;
+}
+h1{
+    margin-left: 50px;
+}
