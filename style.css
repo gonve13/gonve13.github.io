@@ -1,11 +1,13 @@
-button{
+/* index */
+
+#lang-selector > button{
     border: none;
     color: black;
     padding: 2px 32px 3px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 22px;    
+    font-size: 22px;
     background-size:contain;
     background-repeat: no-repeat;
     transform: skew(-20deg);
@@ -14,7 +16,7 @@ button{
     text-shadow: 0 0 5px white;
 }
 
-button:hover{
+#lang-selector > button:hover{
     opacity: 1;
 }
 
@@ -42,3 +44,134 @@ button:hover{
 h1{
     margin-left: 50px;
 }
+
+
+/* pages */
+
+/* cabezal */
+header{
+    background-color: coral;
+    height: 10vh;
+    width: 100vw;
+    border-bottom:1px #111 solid;
+    position: sticky;
+    top: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li h2{
+    color: white;
+    margin-left: 20px;
+    margin-top: 3vh;
+    
+}
+
+li button {
+    display: block;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    height: 10vh;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 0 none;
+    border-left: 1px solid black;
+}
+
+li button:hover {
+    background-color: #111;
+}
+
+
+/* cuerpo */
+
+main{ 
+    display:block;
+    background-color: Black; 
+    min-height: 70vh;
+    padding:2vmin;
+    width: 100vw;
+    margin-top: -2vh;
+}
+
+div.page{
+    
+    margin:0;
+    margin-left: 2vh;
+    padding:5vmax;
+    color:white;
+    min-height: inherit;
+    display:table-cell;
+}
+
+
+#page_about{
+        background-image: linear-gradient(to left, transparent, black), url("./img/bg2.webp");
+        background-repeat: no-repeat;
+        background-size:cover;
+}
+
+
+#page_skills{
+    background-image: linear-gradient(to left, transparent, black), url("./img/bg1.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#page_proyects{
+    background-image: linear-gradient(to left, transparent, black), url("./img/bg3.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#page_contact{
+    background-image: linear-gradient(to left, transparent, black), url("./img/bg4.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* pie de pagina */
+
+footer{
+    background-color: grey; 
+    max-height:5vh;
+    color:white;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    padding: 2vh 2vh;
+}
+
+footer p{
+    float: left;
+    margin: 5px;
+}
+
+p#footnote{
+    float:right;
+    margin-right: 5vw;
+}
+
+body {
+    width: 100vw;
+    margin:0;
+    Padding:0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }

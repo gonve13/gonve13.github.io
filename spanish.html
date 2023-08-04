@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,37 @@
     <title>Gonzalo Vera</title>
 </head>
 <body>
-    
+    <header>
+        
+        <ul>
+            <li style="float: left;"><h2>Portfolio personal</h2></li>
+            <li><button id="btn-contact" onclick="showBody('contact')">Contacto y links</button></li>
+            <li><button id="btn-proyects" onclick="showBody('proyects')">Proyectos</button></li>
+            <li><button id="btn-skills" onclick="showBody('skills')">Aptitudes y Conocimientos</button></li>            
+            <li><button id="btn-about" onclick="showBody('about')">Introducción</button></li>
+            
+            
+        </ul>
+    </header>
+    <main id="main_body">
+        <div class="page" id="page_about">
+            <p>pagina about</p>
+        </div>
+        <div class="page" id="page_skills">
+            <p>pagina skills</p>
+        </div>
+        <div class="page" id="page_proyects">
+            <p>pagina proyectos</p>
+        </div>
+        <div class="page" id="page_contact">
+            <p>pagina contacto</p>
+        </div>
+    </main>
+    <footer>
+        <p>Gonzalo Vera 2023</p>
+        <p id="footnote"> <a target="_blank" href="https://github.com/gonve13/gonve13.github.io/">Repositorio del sitio</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
