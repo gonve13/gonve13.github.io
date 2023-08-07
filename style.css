@@ -46,8 +46,11 @@ h1{
 }
 
 
-/* pages */
 
+/* pages for desktop */
+
+
+@media only screen and (min-width: 730px){
 /* cabezal */
 header{
     background-color: coral;
@@ -68,6 +71,9 @@ ul {
 
 li {
     float: right;
+}
+li:first-child{
+    float:left;
 }
 
 li h2{
@@ -175,3 +181,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none; 
   }
+  }
+  
+  
+  
+  /* pages for phone */
