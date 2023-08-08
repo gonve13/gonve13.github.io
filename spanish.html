@@ -10,15 +10,15 @@
 <body>
     <header>
         
-        <ul>
-            <li style="float: left;"><h2>Portfolio personal</h2></li>
-            <li><button id="btn-contact" onclick="showBody('contact')">Contacto y links</button></li>
-            <li><button id="btn-proyects" onclick="showBody('proyects')">Proyectos</button></li>
-            <li><button id="btn-skills" onclick="showBody('skills')">Aptitudes y Conocimientos</button></li>            
-            <li><button id="btn-about" onclick="showBody('about')">Introducción</button></li>
-            
-            
+        <ul id="cabezal">
+            <li><h2>Portfolio personal</h2></li>
+            <li><button onclick="showBody('page_menu')" id="menu_button">三</button></li>
+            <li><button onclick="showBody('contact')">Contacto y links</button></li>
+            <li><button onclick="showBody('proyects')">Proyectos</button></li>
+            <li><button onclick="showBody('skills')">Aptitudes y Conocimientos</button></li>            
+            <li><button onclick="showBody('about')">Introducción</button></li>         
         </ul>
+
     </header>
     <main id="main_body">
         <div class="page" id="page_about">
@@ -32,6 +32,12 @@
         </div>
         <div class="page" id="page_contact">
             <p>pagina contacto</p>
+        </div>
+        <div id="page_menu">
+                <button onclick="showBody('about')">Introducción</button>  
+                <button onclick="showBody('proyects')">Proyectos</button>
+                <button onclick="showBody('contact')">Contacto y links</button>
+                <button onclick="showBody('skills')">Aptitudes y Conocimientos</button>
         </div>
     </main>
     <footer>
